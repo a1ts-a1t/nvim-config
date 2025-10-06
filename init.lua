@@ -15,3 +15,4 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.g.mapleader = " "
 vim.diagnostic.config({ virtual_text = true })
+

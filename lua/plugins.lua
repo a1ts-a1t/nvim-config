@@ -24,12 +24,6 @@ return require('packer').startup(function(use)
 
     use({
         'neanias/everforest-nvim',
-        config = function()
-            require('everforest').setup({
-                background = 'soft'
-            })
-            vim.o.background = dark
-        end
     })
 
     use({ 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' })
