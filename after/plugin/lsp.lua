@@ -22,5 +22,12 @@ vim.api.nvim_create_autocmd('LspAttach', {
             vim.cmd[[set completeopt+=menuone,noselect,popup]]
             vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
         end
+
+        vim.keymap.set('n', 'grr', require('telescope.builtin').lsp_references, {
+            buffer = bufnr,
+            noremap = true,
+            silent = true,
+            nowait = true,
+        })
     end,
 })
