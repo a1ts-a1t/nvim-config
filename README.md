@@ -7,11 +7,12 @@ tbh i'm totally unsure about the version numbers, except that `neovim` needs to 
 - `neovim >= 0.11`
 - `typescript-language-server >= 0.1`
 - `cargo >= 0.7` with `rust-analyzer`
+- `treesitter-cli` in some way shape or form
 
 ## gotchas
 
-- packer bootstraps itself, so on first boot, it'll probably pump a bunch of error messages. the only way out is through
 - only a few languages are configured for the lsp. add more if you want more
+- there's a bug where opening a file in a subdirectory takes two key presses. idk
 
 ## commands
 
