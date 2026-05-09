@@ -43,17 +43,17 @@ return {
         config = function() require("telescope") end,
         keys = {
             {
-                "<leader>ps",
+                "<leader>grep",
                 function() require("telescope.builtin").live_grep({ search = "" }) end,
                 mode = { "n" },
             },
             {
-                "<leader>ps",
+                "<leader>grep",
                 function() require("telescope.builtin") end,
                 mode = { "v" },
             },
             {
-                "<leader>pf",
+                "<leader>find",
                 function() 
                     local git_dir = vim.fn.finddir('.git', vim.fn.getcwd() .. ';')
 

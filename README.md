@@ -18,9 +18,8 @@ tbh i'm totally unsure about the version numbers, except that `neovim` needs to 
 
 most of these are defaults. i'm just forgetful
 
-- `<leader>` is set to space
 - `gcc` to toggle comment on a line
-- `<leader>touch` to create a new file
+- `;touch` to create a new file
 - `gra` to get code actions
 - `grr` to get references
 - `grn` to rename
@@ -28,5 +27,5 @@ most of these are defaults. i'm just forgetful
 - `<C_X><C_O>` to start code completion
 - `<C_N>`/`<C_P>` to go to next/previous in code completion
 - `<C_Y>` to accept autocomplete
-- `<leader>pf` to find file by name
-- `<leader>ps` to grep all files
+- `<leader>find` to find file by name
+- `<leader>grep` to grep all files
