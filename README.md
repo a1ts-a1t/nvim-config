@@ -18,14 +18,15 @@ tbh i'm totally unsure about the version numbers, except that `neovim` needs to 
 
 most of these are defaults. i'm just forgetful
 
-- `gcc` to toggle comment on a line
+- `jk` (at the same time) to escape
 - `;touch` to create a new file
+- `;find` to find file by name
+- `;grep` to grep all files
+- `gcc` to toggle comment on a line
 - `gra` to get code actions
 - `grr` to get references
 - `grn` to rename
-- `<C_]>` to jump to definition
-- `<C_X><C_O>` to start code completion
-- `<C_N>`/`<C_P>` to go to next/previous in code completion
-- `<C_Y>` to accept autocomplete
-- `<leader>find` to find file by name
-- `<leader>grep` to grep all files
+- `<C-]>` to jump to definition
+- `<C-Space>` to manually start code completion
+- `<C-N>`/`<C-P>` to go to next/previous in code completion
+- `?` to show diagnostics

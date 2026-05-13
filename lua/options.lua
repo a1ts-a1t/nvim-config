@@ -7,9 +7,8 @@ vim.opt.termguicolors = true
 
 vim.g.mapleader = ";"
 
--- i'm being told that this is called "the slam"
-vim.keymap.set("i", "jk", "<esc>")
-vim.keymap.set("i", "kj", "<esc>")
-
 vim.diagnostic.config({ virtual_text = true })
+
+vim.cmd[[set completeopt+=menuone,noselect,popup]]
+vim.o.winborder = "single"
 
