@@ -8,6 +8,22 @@ vim.lsp.config('rust_analyzer', {
     },
 })
 
+vim.lsp.config('ts_ls', {
+    before_init = function(init_params, config)
+        local root = config.root_dir
+        if not root then
+            return
+        end
+
+        -- guards against workspaces on TypeScript 7/ones using the tsgo compiler
+        local old_tsserver = root .. '/node_modules/@typescript/old/lib/tsserver.js'
+        if vim.uv.fs_stat(old_tsserver) then
+            init_params.initializationOptions = init_params.initializationOptions or {}
+            init_params.initializationOptions.tsserver = { path = old_tsserver }
+        end
+    end,
+})
+
 vim.lsp.enable('pyright')
 vim.lsp.enable('ts_ls')
 vim.lsp.enable('lua_ls')
